@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Edit File4'){
             steps {
-                sh 'echo "<h1>Hello from $(hostname).  Final Edit!</h1>" > /var/www/html/index.html'
+                sh 'echo "<h1>Hello from $(hostname).  Final Edit as Luke is here!</h1>" > /var/www/html/index.html'
             }
         }
     }
