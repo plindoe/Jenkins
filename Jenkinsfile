@@ -36,5 +36,10 @@ pipeline {
                 sh 'echo "<h1>Third time edit</h1>" > /var/www/html/index.html'
             }
         }
+        stage('Edit File4'){
+            steps {
+                sh 'echo "<h1>Hello from $(hostname). Final Edit!</h1>" > /var/www/html/index.html'
+            }
+        }
     }
 }
