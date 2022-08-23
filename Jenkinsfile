@@ -31,5 +31,10 @@ pipeline {
                 sh 'echo "<h1>Second time edit</h1>" > /var/www/html/index.html'
             }
         }
+        stage('Edit File3'){
+            steps {
+                sh 'echo "<h1>Third time edit</h1>" > /var/www/html/index.html'
+            }
+        }
     }
 }
