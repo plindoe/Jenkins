@@ -16,5 +16,10 @@ pipeline {
                 sh 'sudo apt install apache2 -y'
             }
         }
+        stage('update again') {
+            steps {
+                sh 'sudo apt update'
+            }
+        }
     }
 }
